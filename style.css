@@ -1,0 +1,157 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Calibri;
+}
+
+body {
+  background-color: antiquewhite;
+  padding: 20px;
+}
+
+.container {
+  background: rgb(241, 235, 226);
+  max-width: 800px;
+  margin: 60px auto;
+  height: 1900px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.background-img {
+  opacity: 0.6;
+  
+  
+}
+
+.header{
+  position: relative;
+  text-align: center;
+}
+.header h1 {
+  margin-bottom: 10px;
+}
+.header h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.img-area {
+  
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 25px auto;
+  border: 15 groove blue;
+}
+
+.img-area img {
+  width: 100%;
+}
+
+button {
+  background: white;
+  color: black;
+  border-radius: 10px;
+  padding: 5px;
+
+}
+
+button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.left{
+  flex: 1;
+  padding: 30px;
+
+}
+
+.left p {
+  line-height: 2;
+}
+
+
+
+
+h2 {
+  background: #4dd4bd;
+  padding: 15px;
+  color: white;
+  margin: 30px 0;
+  font-size: 20px;
+  border-radius: 50px 10px 50px 10px;
+  border-left: 10px solid pink;
+  border-right: 10px solid pink;
+} 
+
+h3 {
+  font-size: 15px; 
+}
+
+.right {
+  flex: 1;
+  padding: 30px;
+}
+
+.right p {
+  line-height: 2.9;
+}
+
+.right ul li {
+  line-height: 2;
+}
+
+@media (min-width:768px) and (max-width: 991px) {
+  .container {
+    width: 95%;
+    height: auto;
+  }
+
+  button {
+    flex-direction: column;
+  }
+  
+
+  
+}
+
+@media screen and (max-width: 600px){
+  .main{
+    flex-direction: column;
+  }
+  .left, .right {
+    flex: none;
+    width: 100%;
+  }
+  .container{
+    width: 95%;
+    height: auto;
+  }
+  
+  button {
+    flex-direction: column;
+  }
+
+  .background-img {
+    width: 95%;
+    height: auto;
+  }
+  
+}
+
+
